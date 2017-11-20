@@ -1,0 +1,10 @@
+---- msgfp Matches (9 in 0 files) ----
+Error.c (openvpn):static FILE *msgfp;         /* GLOBAL */
+Error.c (openvpn):    msgfp = fopen(OPENVPN_DEBUG_FILE, "w");
+Error.c (openvpn):    if (!msgfp)
+Error.c (openvpn):    msgfp = NULL;
+Error.c (openvpn):    FILE *fp = msgfp;
+Error.c (openvpn):    if (!msgfp && !std_redir)
+Error.c (openvpn):        ASSERT(msgfp == NULL);
+Error.c (openvpn):        msgfp = _fdopen(log_fd, "wt");
+Error.c (openvpn):        if (msgfp == NULL)
